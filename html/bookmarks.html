@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js" defer></script>
+</head>
+<body class="body">
+    <header class="header">
+        <h1>Quiz App</h1>
+    </header>
+    <nav>
+        <ul class="nav-bar">
+            <li>
+                <a href="index.html" class="nav-bar__link">🏠</a>
+            </li>
+            <li class="nav-bar__link--active">
+                <a href="bookmarks.html" class="nav-bar__link">💜</a>
+            </li>
+            <li>
+                <a href="profile.html" class="nav-bar__link">👤</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="card">
+            <span class="card__bookmark">💜</span>
+            <div class="card__question">
+                <p>What property flips the axes in flexbox?</p>
+            </div>
+            <div class="card__btn-box">
+                <button class="card__btn">Show Answer</button>
+                <button hidden>Hide Answer</button>
+            </div>
+            <div class="card__answer hidden">
+                <p>"flex-direction"</p>
+            </div>
+            <div class="card__tags">
+                <ul>
+                    <li>#html</li>
+                    <li>#flexbox</li>
+                    <li>#css</li>
+                </ul>
+            </div>
+        </section>
+    </main>  
+</body>
+</html>

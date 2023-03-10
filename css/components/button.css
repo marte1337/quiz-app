@@ -1,0 +1,97 @@
+.card__btn-box {
+    min-height: 170px;
+  }
+  
+  .card__btn {
+      border-radius: 100%;
+      padding: 50px 10px;
+      margin: 15px;
+      font-weight: 500;
+      font-size: large;
+      color:  rgb(240, 236, 243);
+      background-color: rgb(88, 43, 120);
+      box-shadow: 2px 1px 10px black;
+      border: none;
+      transition-duration: 0.2s; 
+  }
+  
+  .card__btn:hover {
+    box-shadow: 10px 12px 16px 0 rgba(0, 0, 0, 0.325), 0 17px 50px 0 rgb(47, 218, 0);
+    color:  rgb(47, 218, 0);
+    text-shadow: 2px 1px 15px rgba(245, 245, 245, 0.344), 1px 1px 20px rgba(47, 218, 0, 0.692);
+    background-color: rgb(60, 9, 97);
+    padding: 55px 12px;
+    margin: 12px;
+    font-size: larger;
+  }
+  
+  .card__btn:active {
+    box-shadow: 10px 12px 16px 0 rgba(0, 0, 0, 0.325), 0 17px 50px 0 red;
+    color:  red;
+    text-shadow: 2px 1px 15px rgba(245, 245, 245, 0.344), 1px 1px 20px red;
+    background-color: rgb(60, 9, 97);
+    padding: 55px 12px;
+    margin: 12px;
+    font-size: larger;
+  }
+
+
+
+
+
+/* DARK MODE SWITCH */
+
+.dark-mode-switch {
+	position: relative;
+	display: grid;
+	grid-template-columns: 230px 64px;
+	grid-template-rows: 34px;
+	grid-template-areas: "settings switch";
+    margin-bottom: 30px;
+}
+
+.dark-mode-switch span {		    /* Der graue Untergrund des Schalters */ 
+	position: absolute;
+	background-color: #ccc;
+	border-radius: 17px;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: background-color .4s;
+}
+
+.dark-mode-switch span::before {    /* Der kreisrunde Button im Switch */ 
+	background-color: white;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	left: 4px;
+	bottom: 4px;
+	height: 26px;
+	width: 26px;
+}
+
+input:checked + span {
+    background-color: darkgreen;
+  }
+  
+  input:checked + span::before {
+    transform: translateX(30px);
+  }
+
+  .dark-mode-switch input {
+	display: none;
+}
+
+.dark-mode-switch span {
+	background-color: #ccc;
+	transition: .4s;
+	grid-area: switch;
+}
+
+.dark-mode-switch p { 
+    font-weight: 600;
+	margin-top: 7px;
+}

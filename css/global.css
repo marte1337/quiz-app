@@ -1,0 +1,41 @@
+
+:root {
+    --gray1: lightgray;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: var(--gray1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.main {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+/* STATE: */
+
+.hidden {
+    display: none;
+}
+
+.dark-mode {
+    background-color: rgb(50, 51, 58);
+    color: white;
+}

@@ -1,0 +1,29 @@
+.nav-bar {
+    background-color:rgb(88, 43, 120);
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+
+    box-shadow: 8px -4px 15px 1px rgba(0, 0, 0, 0.345);
+}
+
+.nav-bar__link {
+    text-decoration: none;
+}
+
+
+.nav-bar__link--active {
+    background-color: lightgrey;
+    border-radius: 2px;
+}
+

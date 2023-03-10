@@ -1,0 +1,12 @@
+.header {
+    color: white;
+    text-shadow: 2px 2px 30px whitesmoke;
+    background-color: rgb(88, 43, 120);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+    box-shadow: 8px 4px 15px 1px rgba(0, 0, 0, 0.345);
+}

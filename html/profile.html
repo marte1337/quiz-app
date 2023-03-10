@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body class="body" data-js="dark">
+    <header class="header">
+        <h1>Quiz App</h1>
+    </header>
+    <nav>
+        <ul class="nav-bar">
+            <li>
+                <a href="index.html" class="nav-bar__link">🏠</a>
+            </li>
+            <li>
+                <a href="bookmarks.html" class="nav-bar__link">💜</a>
+            </li>
+            <li  class="nav-bar__link--active">
+                <a href="profile.html" class="nav-bar__link">👤</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="card" >       
+            <article class="profile">
+                <img src="#" alt="profile picture" class="profile__img">
+                <h2 class="profile__name">Max Doe</h2>
+            </article>
+            <article class="profile__about">
+                <h3>About me:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aspernatur reprehenderit labore nesciunt magnam ipsum repellendus, architecto voluptas? Mollitia aliquam molestias ipsum soluta cum velit unde sed quibusdam assumenda iure!</p>
+            </article>     
+            <div class="profile__counter">
+                <ul>
+                    <li>Counter 1</li>
+                    <li>Counter 2</li>
+                </ul>
+            </div>   
+        </section>
+        <section class="card">
+            <h4 class="profile__name">Settings:</h4>
+            <label class="dark-mode-switch">
+                <input type="checkbox" data-js="dark-mode-switch">
+                <span></span>
+                <p>Dark Mode</p>	  
+            </label>
+        </section>
+    </main>
+</body>
+</html>
